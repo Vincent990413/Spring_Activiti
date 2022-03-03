@@ -8,12 +8,12 @@ import java.util.List;
 @ApiModel("权限表")
 public class Permission {
     @ApiModelProperty("权限ID标识")
-    Integer pid;
+    private Integer pid;
 
     @ApiModelProperty("权限名称")
-    String permissionname;
+    private String permissionname;
 
-    List<Role_permission> rp;
+    private List<Role_permission> rp;
 
     public int getPid() {
         return pid;

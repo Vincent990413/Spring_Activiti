@@ -10,48 +10,48 @@ import io.swagger.annotations.ApiModelProperty;
 @ApiModel("请假表")
 public class LeaveApply implements Serializable {
     @ApiModelProperty("主键")
-    Integer id;
+    private Integer id;
 
     @ApiModelProperty("流程实例id")
-    String process_instance_id;
+    private String process_instance_id;
 
     @ApiModelProperty("用户名")
-    String user_id;
+    private String user_id;
 
     @ApiModelProperty("请假起始时间")
-    String start_time;
+    private String start_time;
 
     @ApiModelProperty("请假结束时间")
-    String end_time;
+    private String end_time;
 
     @ApiModelProperty("请假类型")
-    String leave_type;
+    private String leave_type;
 
     @ApiModelProperty("请假原因")
-    String reason;
+    private String reason;
 
     @ApiModelProperty("申请时间")
-    String apply_time;
+    private String apply_time;
 
     @ApiModelProperty("实际请假起始时间")
-    String reality_start_time;
+    private String reality_start_time;
 
     @ApiModelProperty("实际请假结束时间")
-    String reality_end_time;
+    private String reality_end_time;
 
     @ApiModelProperty("部门经理")
-    String deptleader;
+    private String deptleader;
 
     @ApiModelProperty("Activiti自带的任务信息")
-    Task task;
+    private Task task;
 
-    String executionid;
+    private String executionid;
 
     @ApiModelProperty("流程标识")
-    String activityid;
+    private String activityid;
 
     @ApiModelProperty("假条状态")
-    String state;
+    private String state;
 
     public int getId() {
         return id;

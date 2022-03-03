@@ -8,16 +8,16 @@ import java.util.List;
 @ApiModel("角色表")
 public class Role {
     @ApiModelProperty("角色主键标识")
-    Integer rid;
+    private Integer rid;
 
     @ApiModelProperty("角色名称")
-    String rolename;
+    private String rolename;
 
     @ApiModelProperty("维护用户信息与角色信息的关系")
-    List<User_role> user_roles;
+    private List<User_role> user_roles;
 
     @ApiModelProperty("维护角色信息与权限信息的关系")
-    List<Role_permission> role_permissions;
+    private List<Role_permission> role_permissions;
 
     public int getRid() {
         return rid;

@@ -7,13 +7,13 @@ import io.swagger.annotations.ApiModelProperty;
 public class User_role {
 
     @ApiModelProperty("主键标识")
-    Integer urid;
+    private Integer urid;
 
     @ApiModelProperty("用户信息")
-    User user;
+    private User user;
 
     @ApiModelProperty("角色信息")
-    Role role;
+    private Role role;
 
     public int getUrid() {
         return urid;

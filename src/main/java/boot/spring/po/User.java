@@ -9,22 +9,22 @@ import java.util.List;
 public class User {
 
     @ApiModelProperty("主键标识")
-    Integer uid;
+    private Integer uid;
 
     @ApiModelProperty("用户名")
-    String username;
+    private String username;
 
     @ApiModelProperty("密码")
-    String password;
+    private String password;
 
     @ApiModelProperty("手机号码")
-    String tel;
+    private String tel;
 
     @ApiModelProperty("年龄信息")
-    Integer age;
+    private Integer age;
 
     @ApiModelProperty("维护的用户所具有的角色信息")
-    List<User_role> user_roles;
+    private List<User_role> user_roles;
 
     public int getUid() {
         return uid;

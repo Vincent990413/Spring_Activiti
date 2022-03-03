@@ -13,31 +13,31 @@ import com.alibaba.fastjson.annotation.JSONField;
 public class PurchaseApply {
 
     @ApiModelProperty("采购申请主键标识")
-    Integer id;
+    private  Integer id;
 
     @ApiModelProperty("清单列表")
-    String itemlist;
+    private String itemlist;
 
     @ApiModelProperty("采购总量")
-    BigDecimal total;
+    private BigDecimal total;
 
     @ApiModelProperty("申请时间")
-    String applytime;
+    private String applytime;
 
     @ApiModelProperty("申请人")
-    String applyer;
+    private String applyer;
 
     @ApiModelProperty("Activiti自带的任务Task")
-    Task task;
+    private Task task;
 
     @ApiModelProperty("流程实例ID")
-    String processinstanceid;
+    private String processinstanceid;
 
     @ApiModelProperty("activiti标识")
-    String activityid;
+    private String activityid;
 
     @ApiModelProperty("采购状态")
-    String state;
+    private String state;
 
     public int getId() {
         return id;

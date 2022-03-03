@@ -7,13 +7,13 @@ import io.swagger.annotations.ApiModelProperty;
 public class Role_permission {
 
     @ApiModelProperty("主键标识")
-    Integer rpid;
+    private Integer rpid;
 
     @ApiModelProperty("角色信息")
-    Role role;
+    private Role role;
 
     @ApiModelProperty("权限信息")
-    Permission permission;
+    private Permission permission;
 
     public int getRpid() {
         return rpid;
